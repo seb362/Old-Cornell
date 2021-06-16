@@ -1,0 +1,506 @@
+html, body {
+  margin: 0;
+  color: #1E1F1E;
+/*  background-color: #FFFDF1;*/
+  background-color: rgb(255,254,219);
+}
+
+.content{
+  text-align: left;
+  margin: 3% 10%;
+}
+
+.galImgTitle{
+    text-align: left;
+    margin-top: 3%;
+    margin-left: 30%;
+    margin-bottom: 3%;
+}
+
+/*FONTS*/
+
+  /*Righteous font by the designer Astigmatic at https://fonts.google.com/specimen/Righteous?selection.family=Righteous*/
+  @font-face{
+    font-family: 'righteous';
+    src: url('../fonts/Righteous-Regular.ttf');
+    font-style: normal;
+}
+
+ /*Libre Baskerville font by the designer Astigmatic at https://fonts.google.com/specimen/Libre+Baskerville?selection.family=Libre+Baskerville*/
+@font-face{
+    font-family: 'librenormal';
+    src: url('../fonts/LibreBaskerville-Regular.ttf');
+    font-style: normal;
+}
+
+ @font-face{
+    font-family: 'librebold';
+    src: url('../fonts/LibreBaskerville-Bold.ttf');
+    font-style: bold;
+}
+
+ @font-face{
+    font-family: 'libreitalic';
+    src: url('../fonts/LibreBaskerville-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face{
+  font-family: 'arial';
+  src: url('../fonts/arial.ttf');
+  font-style: normal;
+}
+
+h1{
+  font-family: 'righteous', Arial, sans-serif;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 0 0 5px black;
+  letter-spacing: 10px;
+  color: #E1E1E1;
+  background-color: rgba(211, 211, 211, 0.349);
+}
+
+h2{
+  font-family: 'librenormal', Georgia, serif;
+}
+
+h3{
+  font-family: 'librenormal', Georgia, serif;
+}
+
+p {
+  font-family: 'librenormal', Georgia, serif;
+  line-height: 2em;
+}
+
+li{
+  font-family: 'librenormal', Georgia, serif;
+}
+
+label, input, textarea{
+  font-family: 'librenormal', Georgia, serif;
+}
+
+em{
+  font-weight: bold;
+}
+
+#practicetime{
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+  border: 2px black solid;
+  margin: 0 5%;
+  padding: 0 2%;
+}
+
+/*Navigation bar*/
+.header{
+  background-color: #da3b3e;
+  display: flex;
+}
+
+#topname{
+  font-size: 30px;
+  line-height: 60px;
+  margin: 0 0;
+  padding: 0 5px;
+  font-family: 'righteous', Arial, sans-serif;
+  letter-spacing: 3px;
+}
+
+#logo{
+  height: 60px;
+  width: 60px;
+}
+
+#logoandname{
+  text-align: left;
+  align-self: flex-start;
+  width: 30%;
+  display: flex;
+}
+
+#logopic{
+  height: 60px;
+}
+
+#navlinks{
+  justify-content: right;
+  align-self: center;
+  width: 70%;
+
+}
+
+.navigation{
+  text-align: right;
+  margin: 0 0;
+  padding-left: 0;
+  padding-right: 4%;
+}
+.notlist{
+  display: inline-block;
+  padding: 0 1%;
+}
+
+.navlink{
+  text-decoration: none;
+  color: #1E1F1E;
+
+}
+
+.currentpage{
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/*Title headers of each page*/
+#index_title{
+  background-image: url("../images/group-edit.jpg");
+  background-position-y: 10%;
+}
+
+#officers_title{
+  background-image: url("../images/group-selfie.jpg");
+  background-position-y: 60%;
+  background-size: 100%;
+}
+
+#gallery_title{
+  background-image: url("../images/asia-night-2018.jpg");
+  background-position-y: 40%;
+}
+
+#performance_title{
+  background-image: url("../images/lion-dance.jpg");
+  background-position-y: 40%;
+  background-size: 100%;
+}
+
+#contact_title{
+  background-image: url("../images/asia-night-2018-2.jpg");
+  background-position-y: 20%;
+}
+
+#index_title, #officers_title, #gallery_title, #performance_title, #contact_title, #officers_title, h1{
+  margin: 0 0;
+  padding: 3% 0;
+}
+
+/*Footer*/
+.footer{
+  position: static;
+  bottom: 0;
+  text-align: right;
+  background-color: #d02b2d;
+  height: auto;
+  margin: 0;
+  padding: 0.5% 0;
+}
+
+.link{
+  color: #1E1F1E;
+  text-decoration: none;
+}
+
+.email{
+  color: #1E1F1E;
+  text-decoration: underline;
+}
+
+/*Forms*/
+.question, input{
+  margin: 1% 0;
+}
+
+.requestform{
+  margin: 0 0%;
+}
+
+#submit_request_button, #submit_image_button, #submit_gallery_button{
+  margin: 1% 0 ;
+}
+
+/*Gallery*/
+.galleryRow{
+  display: flex;
+  /* flex-wrap: wrap;
+  width: 100%;
+  height: 300%;
+  align-content: center;
+  margin-left: 0px;
+  margin-right: 0px; */
+
+}
+
+.galleryPic{
+  flex: 1;
+  flex-wrap: wrap;
+  width: 25em;
+  border-radius: 20px;
+  height: 18em;
+  cursor: pointer;
+  border-style: solid;
+  border-color: rgb(170, 139, 2);
+}
+
+.galleryImg{
+  /*background-color: rgb(105, 105, 105, 20%); */
+  text-align: center;
+  /* border-style: solid;
+  border-radius: 10px; */
+  margin-left: .25em;
+  margin-right: .25em;
+  margin-bottom: .25em;
+  margin-top: .25em;
+  height: 32%;
+  width: 32%;
+}
+
+.delete_button {
+  background: red;
+  color: white;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  height: 60px;
+  width: 160px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+
+#slideshow {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#slideContainer {
+  position: relative;
+  padding: 0;
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  display: none;
+  vertical-align: middle;
+  margin: auto;
+  height: 70%;
+  width: 50%;
+}
+
+.slideImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+.slideshowDescription {
+  display: none;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#closeSlideshow {
+  color: white;
+  position: absolute;
+  top: 1%;
+  right: 20%;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#closeSlideshow:hover {
+  color: #aaa;
+  cursor: pointer;
+}
+
+#prevSlide, #nextSlide {
+  cursor: pointer;
+  position: absolute;
+  top: 28%;
+  width: auto;
+  padding: 16px;
+  margin-top: 50px;
+  color: white;
+  font-size: 40px;
+  transition: 0.6s ease;
+}
+
+#prevSlide {
+  left: 20%;
+}
+
+#nextSlide {
+  right: 20%;
+}
+
+.calendarEmbed{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#embedFormat{
+  border-width:0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.top {
+  height: 75vh;
+  text-align: center;
+}
+
+.index-top {
+  background-image: url(../images/group-edit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.flex-image {
+  flex-grow: 1;
+}
+
+.flex-officer {
+  /* flex-grow: 2;
+  padding-left: 0%; */
+  padding-right: 2%;
+}
+
+.officer-image {
+  width: 200px;
+}
+
+.officer-name {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-family: 'librenormal', Georgia, serif;
+}
+
+.officer-title {
+  font-size: 22px;
+  padding-bottom: 15px;
+  font-family: 'librenormal', Georgia, serif;
+}
+
+.officer-bio{
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-family: 'librenormal', Georgia, serif;
+  line-height: 2em;
+}
+
+.officer-admin-form{
+  margin-left: 0%;
+}
+
+#EBFormat{
+    display: flex;
+    flex-wrap: nowrap;
+    /*border-style: solid;
+    border-color: green; */
+}
+
+.center {
+  text-align: center;
+}
+
+.lion {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.lion_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.lion_citation {
+  font-size: 12px;
+  text-align: center;
+  padding: 0.5% 0;
+}
+
+.schedule {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.performance-img {
+  width: 40%;
+}
+
+.recent-performance {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.performance-title {
+  font-size: 40px;
+  font-family: 'righteous', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.performance-description {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#upload-performance {
+  text-align: center;
+}
+
+.form_error {
+	color: red;
+}
+
+.form_success {
+	color: green;
+}
+
+/*cite{
+  color: white;
+}*/
+
+.bigger {
+  font-size: 30px;
+  color: black;
+}
